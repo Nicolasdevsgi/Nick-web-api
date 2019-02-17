@@ -6,6 +6,11 @@ namespace Nick.Web.Infra.Data.Transactions
     {
         private readonly NickWebContext _context;
 
+        public UnitOfWork(NickWebContext context)
+        {
+            _context = context;
+        }
+
         public void Commit()
         {
             _context.SaveChanges();
