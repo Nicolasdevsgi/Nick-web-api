@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Nick.Web.Infra.Data.Context;
+using Nick.Web.Services.Api.Config;
 
 namespace Nick.Web.Services.Api
 {
@@ -23,6 +24,7 @@ namespace Nick.Web.Services.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.RegistrarDependencias();
             ConfigurarConexaoBancoDeDados(services);            
         }
 

@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Controllers\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
@@ -13,6 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Infra\CrossCutting\Nick.Web.Infra.CrossCutting\Nick.Web.Infra.CrossCutting.csproj" />
     <ProjectReference Include="..\..\Infra\Data\Nick.Web.Infra.Data\Nick.Web.Infra.Data.csproj" />
   </ItemGroup>
 
