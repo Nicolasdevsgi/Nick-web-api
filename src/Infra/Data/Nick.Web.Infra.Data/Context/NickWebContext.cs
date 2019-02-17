@@ -7,6 +7,11 @@ namespace Nick.Web.Infra.Data.Context
 {
     public class NickWebContext : DbContext
     {
+        public NickWebContext(DbContextOptions<NickWebContext> options) : base(options)
+        {
+
+        }
+
         public DbSet<Produto> Produtos { get; set; }
         public DbSet<Pedido> Pedidos { get; set; }
         public DbSet<ItemPedido> ItemPedidos { get; set; }
